@@ -1,0 +1,5 @@
+#!/bin/bash
+mv -f ./testZone/jpegFiles/* ./testZone/
+mv -f ./testZone/textFiles/* ./testZone/
+rm -r ./testZone/textFiles/
+rm -r ./testZone/jpegFiles/
