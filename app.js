@@ -79,6 +79,9 @@ function filesForFolder(array, callback) {
 
 (async () => {
     const newFoldersCreated = await handlingFiles(currentPath)
+    if (newFoldersCreated.length === 0) {
+        return console.log("No hay archivos que organizar.");
+    }
     await filesForFolder(newFoldersCreated, (data) => {
         console.log('data: ' + JSON.stringify(data));
     })
