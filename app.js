@@ -1,9 +1,12 @@
 const path = require('path');
 const fs = require('fs');
+const chalk = require('chalk');
+
+
 
 //path to work with
 
-const currentPath = path.join(path.dirname(__dirname) + "/sortingfilesfolder/testZone/");
+//const currentPath = path.join(path.dirname(__dirname) + "/sortingfilesfolder/testZone/");
 
 //It creates a folder pattern "extensionFile + Files" and move this file into its folder
 
@@ -77,12 +80,25 @@ function filesForFolder(array, callback) {
 
 //It executes the functions
 
-(async () => {
-    const newFoldersCreated = await handlingFiles(currentPath)
-    if (newFoldersCreated.length === 0) {
-        return console.log("No hay archivos que organizar.");
-    }
-    await filesForFolder(newFoldersCreated, (data) => {
-        console.log('data: ' + JSON.stringify(data));
-    })
-})()
+
+const clientPath = process.argv[2];
+//console.log("clientPath:" + clientPath);
+
+const currentPath = path.join(path.dirname(__dirname) + clientPath);
+
+if (!fs.existsSync(currentPath)) {
+    console.clear();
+    console.log(chalk.red("No existe la ruta: " + currentPath));
+} else {
+    (async () => {
+        const newFoldersCreated = await handlingFiles(currentPath)
+        if (newFoldersCreated.length === 0) {
+            console.clear();
+            return console.log(chalk.yellow("No hay archivos que organizar."));
+        }
+        await filesForFolder(newFoldersCreated, (data) => {
+            console.clear();
+            console.log(chalk.green('data: ' + JSON.stringify(data)));
+        })
+    })()
+}
