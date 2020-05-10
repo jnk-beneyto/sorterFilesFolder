@@ -1,0 +1,7 @@
+#!/bin/bash
+mkdir -pv "testZone"
+touch ./testZone/file1.text
+touch ./testZone/file2.text
+touch ./testZone/file1.jpeg
+touch ./testZone/file2.jpeg
+touch ./testZone/file3.jpeg
