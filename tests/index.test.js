@@ -7,13 +7,15 @@ const {
 } = require('../utils/utils');
 
 
-function fileCreator(numberFiles, extensionFile) {
-    for (let i = 0; i < numberFiles; i++) {
-        fs.writeFileSync(`./tests/testingZone/file${i}.${extensionFile}`, "test" + i);
-    }
-}
+
 
 describe('Testing functions', () => {
+
+    function fileCreator(numberFiles, extensionFile) {
+        for (let i = 0; i < numberFiles; i++) {
+            fs.writeFileSync(`./tests/testingZone/file${i}.${extensionFile}`, "test" + i);
+        }
+    }
 
     //before all tests we create some files 
 
