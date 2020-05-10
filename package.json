@@ -1,0 +1,23 @@
+{
+	"name": "sortingfilesfolder",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"directories": {
+		"test": "tests"
+	},
+	"dependencies": {
+		"chalk": "^4.0.0",
+		"fs-extra": "^9.0.0",
+		"jest": "^26.0.1"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "./node_modules/.bin/jest --forceExit && node ./rm.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"jest": {
+		"testEnvironment": "node"
+	}
+}
