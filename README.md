@@ -1,7 +1,6 @@
-# sorterFilesFolder
+# sorterFilesFolder [![Build Status](https://travis-ci.org/jnk-beneyto/sorterFilesFolder.svg?branch=master)](https://travis-ci.org/jnk-beneyto/sorterFilesFolder)
 
 Through command line executes the script with a path given
-
 
 ## steps to run
 
