@@ -1,7 +1,7 @@
 languaje: node_js
 node_js:
   - node
-install:
-  - npm install
+before_script:
+  - cd tests && mkdir testingZone
 notifications:
   - email: false
