@@ -2,9 +2,8 @@
 
 Through command line executes the script with a path given
 
-## Steps to check this project
 
-# steps to run
+## steps to run
 
     -requirements
         node and npm get installed
@@ -13,6 +12,7 @@ Through command line executes the script with a path given
 git clone https://github.com/jnk-beneyto/sorterFilesFolder.git
 cd sorterFilesFolder
 ./createEnv
+npm install
 node app.js "/sorterFilesFolder/testZone/"
 ```
 
@@ -23,3 +23,7 @@ situation before script
 result
 
 ![final tree folder](/img/strFinal.png "FINAL")
+
+terminal output
+
+![data info](/img/resumenDatos.png "RESUMEN")
