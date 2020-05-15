@@ -1,7 +1,5 @@
 # sorterFilesFolder [![Build Status](https://travis-ci.org/jnk-beneyto/sorterFilesFolder.svg?branch=master)](https://travis-ci.org/jnk-beneyto/sorterFilesFolder)
 
-[![Known Vulnerabilities](https://snyk.io/test/github/jnk-beneyto/sorterFilesFolder/badge.svg)](https://snyk.io/test/github/jnk-beneyto/sorterFilesFolder)
-
 Through command line executes the script with a path given
 
 ## steps to run
