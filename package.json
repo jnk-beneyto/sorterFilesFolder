@@ -7,7 +7,7 @@
 		"test": "tests"
 	},
 	"dependencies": {
-		"chalk": "^4.0.0",
+		"chalk": "^4.1.0",
 		"fs-extra": "^9.0.0",
 		"jest": "^26.0.1"
 	},
